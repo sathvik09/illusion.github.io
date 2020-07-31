@@ -9,6 +9,18 @@ body{
     background-color: black;
 }
 
+.img{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -15vw;
+    margin-top: 8vw;
+}
+.im{
+    width: 40%;
+    height: 55vh;
+    border-radius: 20px;
+}
+
 .landing{
     background-image: url(../landing.jpeg);
     height: 100vh;
@@ -32,6 +44,43 @@ nav{
     font-size: 16px;
 
 }
+
+/* About sec */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    background-color: black
+}
+
+.about h4,p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:rgb(236, 233, 233);
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-b{
+    width: 10%;
+    height: 5vh;
+    border: none;
+    border-radius: 20px;
+}
+
+.page-section{
+    height: 80vh;
+    background-color: black;
+    width: 100%;
+    color: aliceblue;
+}
+
 
 @media screen and (max-width: 768px){
      
@@ -88,4 +137,10 @@ nav{
     li.fade{
         opacity: 1;
     }
+}
+
+
+.about-b:hover{
+    background-color: blueviolet;
+    color: white;
 }
