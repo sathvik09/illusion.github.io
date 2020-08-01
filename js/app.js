@@ -7,12 +7,6 @@ const torch = document.getElementById('torch');
 const login_sub = document.querySelector('.submit');
 const data = document.querySelectorAll('.validate');
 
-hamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle("open");
-    links.forEach(l=>{
-        l.classList.toggle('fade')
-    })
-})
 
 const cursor = document.querySelector('.cursor');
 
@@ -31,16 +25,13 @@ document.addEventListener('click', () => {
 
 let a = {};
 
-let x = (user,pass)=>{
-  let a = fetch("data.json")
+let x = async(user,pass)=>{
+  let a = await fetch("./js/data.json")
   .then(response => response.json())
   .then(json =>{
       json.user.forEach((e,i)=>{
           if(e == user && json.pass[i] == pass){
-            alert("done");
-          }
-          else{
-            window.location.assign("./index.html");
+            window.location.assign("./design/user_dashboard/browse.html");
           }
           
       })

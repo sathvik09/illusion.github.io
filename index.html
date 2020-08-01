@@ -8,35 +8,106 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&family=Parisienne&display=swap" rel="stylesheet">
-            
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+           
 </head>
 <body>
 <section class="page1">
    <div class="section-head">
     <nav class="landing">
-       <div class="hamburger">
-           <div class="line"></div>
-           <div class="line"></div>
-           <div class="line"></div>
-       </div>
        <div class="logo">
            <h4>Illusion</h4>
        </div>
        <ul class="nav-links">
-           <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-           <li><a href="login.html">Login</a></li>
+           <li class="contact-about"><a style="color: #f6c709;">About</a></li>
+           <li class= "contact-main"><a style="color: #f6c709;">Contact</a></li>
+           <li><a style="color: #f6c709;" href="login.html">Login</a></li>
        </ul>
     </nav>
       <p class="cursor"></p>
         
 </div>
-  <div class="about">
-      <h4 class="about-heading">We've got what you need!</h4>
-      <div class="break1"></div>
-      <p class="about-p">somth here</p>
-      <button class="about-b">Get Strted</button>
- </div>
+
+<div class="container" style="margin-left: 0vw;height: 44vw;">
+    <div class="carousel slide" id="main-carousel" data-ride="carousel" style="width: 96vw;height: 44vw;">
+      <ol class="carousel-indicators" style="opacity: 1;background-color: transparent;">
+        <li
+          data-target="#main-carousel"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#main-carousel" data-slide-to="1"></li>
+        <li data-target="#main-carousel" data-slide-to="2"></li>
+        <li data-target="#main-carousel" data-slide-to="3"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block img-fluid"
+            style="width: 100vw;height: 44vw;"
+            src="img/dark.png"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block img-fluid"
+            
+            style="width: 100vw;height: 44vw;"
+            src="img/sherlock.jpg"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block img-fluid"
+            
+            style="width: 100vw;height: 44vw;"
+            src="img/lost.jpg"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/strangert.jpg "
+            
+            style="width: 100vw;height: 44vw;"
+            alt=""
+            class="d-block img-fluid"
+          />
+        </div>
+      </div>
+      <!-- /.carousel-inner -->
+
+      <a
+        href="#main-carousel"
+        class="carousel-control-prev"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only" aria-hidden="true">Prev</span>
+      </a>
+      <a
+        href="#main-carousel"
+        class="carousel-control-next"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only" aria-hidden="true">Next</span>
+      </a>
+    </div>
+    <!-- /.carousel -->
+  </div>
+  
+
+  
 
 </section>
 
@@ -47,10 +118,11 @@
             <p><b style="color: aliceblue;">4 screens can be viewed at a time, 4k video.</b>We provide the quality entertainment that you deserve at a price you would'nt BELIVE! With the premium membership, You will be 
                able to view any and all of the latest movies and TV shows faster than any other streaming platform. 
               <br><br>
-              <button class='sub-subscribe'><a href='#'>Subscribe Now</a></button>
+              <button class='sub-subscribe'><a href='#'>Login</a></button>
             </p>
             <p>Not sure about us? Try us for 30 days, don't like it? you can cancel anytime in your trial period and you won't be charged
-                BUT beware, Once you go illusion, Everything else becomes obsalete.
+                BUT beware, once you go illusion, everything else becomes obsolete.
+
             </p>
         </div>
 </section>
@@ -81,7 +153,7 @@
                     <i class="fas fa-4x fa-globe text-secondary mb-4"></i>
                     <h3 class="h4 mb-2">We get you</h3>
                     <p class="text-muted mb-0">Recomendations based on you</p>
-                </div>
+                 </div>
             </div>
         </div> 
         <div class="mobile">
@@ -112,12 +184,12 @@
 </section>
 <div class="animation">
     <p class="p1">Others</p>
-    <i class="fas fa-4x fa-car-side car"></i>
+    <i class="fas fa-4x fa-car-side car" style="color: white;"></i>
     <p class="p2">Us</p>
 </div>
 
 
-<section class="page-section" id="contact">
+<section class="page-section" style="height: 50vw;" id="contact">
     <div class="break"></div>
     <div class="container page-contact">
         <div class="row justify-content-center">
@@ -149,9 +221,11 @@
                 <a class="d-block push" href="yesWeHearYou@illusion.com">yesWeHearYou@illusion.com</a>
             </div>
     </div>
+    <i class="fas fa-3x fa-arrow-up arr "></i>
 </section>
 
 <script src="https://kit.fontawesome.com/fbe06f22f8.js" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
