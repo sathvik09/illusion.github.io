@@ -10,6 +10,19 @@ background-color: black;
 
   font-family: "Baloo Thambi 2", cursive;
 }
+
+/* CURSOR*/
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 1vw;
+  width: 1vw;
+  mix-blend-mode: difference;
+} 
+
 .container {
   display: flex;
   flex-wrap: wrap;
