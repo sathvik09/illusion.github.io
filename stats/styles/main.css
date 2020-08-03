@@ -1,0 +1,110 @@
+#wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 10px;
+  margin: 0 auto;
+}
+
+h1 {
+  position: absolute;
+  top: 500px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  width: 960px;
+}
+
+.map-wrapper {
+  position: fixed;
+}
+
+canvas {
+    width: 50% !important;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    right: 400px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/*h1.map-country-title_main {
+    position: absolute;
+    font-family: Poppins;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    width: 100%;
+    top: 65%;
+    left: 80%;
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}*/
+
+.map-scroll-hide {
+  overflow: hidden;
+  padding-right: 18px;
+  box-sizing: border-box;
+}
+
+ul.map-key-list {
+    position: absolute;
+    right: -5%;
+    top: 0;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 80px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    list-style: none;
+    height: 100%;
+    overflow: auto;
+    padding-left: 0px !important;
+    padding-right: 36px;
+}
+
+/*li.map-key-list-item {
+    font-size: 12px;
+    line-height: 12px;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+li.map-key-list-item:after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #ebaf06;
+    border-radius: 10px;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+}
+
+li.map-key-list-item:hover:after {
+    background-color: #e91e63;
+    border-radius: 0px;
+}
+
+li.map-key-list-item.active:after {
+  background-color: #e91e63;
+  border-radius: 0px;
+}
+
+
+/* Temporary styles */
+
+/* .map-country-project-description,
+.map-country-course-boolean {
+  display: none;
+} */
