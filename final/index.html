@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbe06f22f8.js" crossorigin="anonymous"></script>
+  </head>
+  <style></style>
+  <body>
+    <div class="container4">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#statistics">Statistics</a></li>
+          <li><a href="./prec.html">Prevention</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="home">
+        <div class="container-land">
+          <div class="head-text">
+            <h2 class="home-head">COVID-19 </h2>
+            <p class="home-para">Stay at Home quarantine To stop Corona virus</p>
+          </div>
+          <img class="img-head" src="./images/landing.svg" alt="" />
+        </div>
+      </section>
+        <section id="about">
+          <div class="about-sec">
+            <div class="about-head">What is corona virus??</div>
+            <div class="about-body">
+              <img src="./images/img-2.svg" alt="" class="about-img">
+              <p class="about-content">
+                Corona viruses are a type of virus. There are many different kinds,
+              and some cause disease. A newly identified type has caused a recent
+              outbreak of respiratory illness now called COVID-19.Lauren Sauer,
+              M.S., the director of operations with the Johns Hopkins Office of
+              Critical Event Preparedness and Response
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="statistics" class="statistics">
+          <div class="stats-title">
+            Here's some stats
+          </div>
+          <div class="stats-body">
+            <div class="stats-content-div">
+              <div class="stats-body-div">
+                <h3 class="cases">Corona Virus Cases</h3>
+                <p>18,246,339</p>
+                <div class="space"></div>
+                <h3 class="death">Death</h3>
+                <p>692,973</p>
+                <div class="space"></div>
+                <h3 class="recovered">Recovered</h3>
+                <p>11,453,809</p>
+                <div class="space"></div>
+                <h3 class="stats-content">The coronavirus COVID-19 is affecting 213 countries and territories around the world and 2 international conveyances. The day is reset after midnight GMT+0. The list of countries 
+                                          and territories and their continental regional classification is based on the United Nations Geoscheme.</h3>  
+                <h3 class="stats-content-mobile">The coronavirus COVID-19 is affecting 213 countries and territories around the world.</h3>  
+              </div>
+              <div class="btn-contain"><button class="stats-btn"><a href="../worldtour/index.html">Know More</a></button></div>
+            </div>
+            <img src="./images/img-3.svg" alt="" class="stats-img">
+          </div>
+        </section>
+      <section id="contact">
+        <div class="img">
+          <div class="form-group">
+            <label class="l1 form-d" style="color: #489780;">Name</label>
+            <input type="text" class="form-control des" id="usr" />
+            <label class="label form-d" for="pwd">Feedback</label>
+            <textarea class="input" name="feedback" id="" cols="80" rows="13"></textarea>
+            <br />
+            <input class="submit" type="button" value="Submit" />
+          </div>
+          <img src="./images/contact.svg" alt="pic" />
+        </div>
+        <div class="icons">
+          <a href=""> <i class="fab fa-2x fa-facebook"></i></a>
+          &nbsp;&nbsp;
+          <a href=""> <i class="fab fa-2x fa-twitter-square"></i></a
+          >&nbsp;&nbsp;
+          <a href=""> <i class="fab fa-2x fa-instagram"></i></a>&nbsp;&nbsp;
+          <a href=""> <i class="fab fa-2x fa-linkedin"></i></a>
+        </div>
+        <div class="footer">
+          <p>
+            2020 @copyrights SVN All rights reserved
+          </p>
+        </div>
+        <div class="cursor"></div>
+      </section>
+    </div>
+    <script src="./js/index.js"></script>
+    <script>
+      (function () {
+        const cursor = document.querySelector(".cursor");
+
+        const animateit = function (e) {
+          const span = this.querySelector("span");
+          const { offsetX: x, offsetY: y } = e,
+            { offsetWidth: width, offsetHeight: height } = this,
+            move = 25,
+            xMove = (x / width) * (move * 2) - move,
+            yMove = (y / height) * (move * 2) - move;
+
+          span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+          if (e.type === "mouseleave") span.style.transform = "";
+        };
+
+        const editCursor = (e) => {
+          const { clientX: x, clientY: y } = e;
+          cursor.style.left = x + "px";
+          cursor.style.top = y + "px";
+        };
+
+        window.addEventListener("mousemove", editCursor);
+      })();
+    </script>
+  </body>
+</html>
